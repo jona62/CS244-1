@@ -1,34 +1,12 @@
 #include <iostream>
-#include <ctime>
-#include <cstdlib>
 using namespace std;
 
 #define SIZE 15
+#define ROTATER 3
 
-void printArray(int array[]) {
-  cout << "[";
-  for (int i = 0; i < SIZE; i++) {
-    if (i == SIZE - 1) {
-      cout << array[i] << "]\n";
-    } else {
-      cout << array[i] << ", ";
-    }
-  }
-}
-
-void exercise3(int num_array[]) {
-  srand((unsigned)time(0));
-  int random_num, n;
+//Exercise 3
+void nReverse(int num_array[], int n) {
   int temp_array[SIZE];
-  cout << "Initializing original array\n";
-  for (int i = 0; i < SIZE; i++) {
-    random_num = rand() % 100;
-    num_array[i] = random_num;
-  }
-  cout << "Printing original array:\n";
-  printArray(num_array);
-  cout << "Enter the value of n:\n";
-  cin >> n;
   n %= SIZE;
   for (int i = n - 1, j = 0; i >= 0; i--, j++) {
     temp_array[j] = num_array[i];
@@ -36,12 +14,22 @@ void exercise3(int num_array[]) {
   for (int i = 0; i < n; i++) {
     num_array[i] = temp_array[i];
   }
-  cout << "Printing array with the first " << n << " elements reversed\n";
-  printArray(num_array);
 }
 
-int main() {
-  int num_array[SIZE];
-  exercise3(num_array);
+//Exercise 4
+void arrayRotation(int numArray[]) {
+  int coordinator = SIZE - ROTATER;
+  int tempArray[SIZE];
+  for (int i = coordinator, j = 0; j < SIZE; j++) {
+    tempArray[j] = numArray[i];
+    i++;
+    i %= SIZE;
+  }
+  for (int i = 0; i < SIZE; i++) {
+    numArray[i] = tempArray[i];
+  }
+}
+
+int main() { 
   return 0;
 }
