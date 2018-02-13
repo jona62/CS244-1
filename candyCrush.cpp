@@ -10,9 +10,22 @@ void printArray(char arr[]) {
   cout << "[";
   for (int i = 0; i < SIZE; i++) {
     if (i == SIZE - 1) {
-      cout << arr[i] << "]\n\n";
+      cout << arr[i] << "]\n";
     } else {
         cout << arr[i] << ", ";
+    }
+  }
+}
+
+void printIndices() {
+  cout << "[";
+  for (int i = 0; i < SIZE; i++) {
+    if (i == SIZE - 1) {
+      cout << i << "]\n";
+    } else if (i >= 9) {
+      cout << i << ",";
+    } else {
+      cout << i << ", ";
     }
   }
 }
@@ -31,6 +44,7 @@ void candyCrush()
       }
     //showing original Array
     printArray(charArray);
+    printIndices();
     //reusing x as iterator
     x = 0;
     while (x < SIZE)
@@ -117,6 +131,7 @@ void candyCrush()
       }
       //printing out newly changed Array
       printArray(charArray);
+      printIndices();
     }
 
 int main() {
