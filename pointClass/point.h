@@ -6,4 +6,8 @@ class Point {
     void shift(double dx, double dy);
     double get_x() const;
     double get_y() const;
+    void absResetx(int value);
+    void absResety(int value);
+    void xIntoy();
+    void yIntox();
 };
