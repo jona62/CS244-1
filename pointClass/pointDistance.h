@@ -4,6 +4,14 @@
 #define SIZEA 40
 #define SIZEB SIZEA/2
 
+#include <iostream>
+#include <cmath>
+#include <ctime>
+#include <sstream>
+#include <cstdlib>
+using namespace std;
+
+
 #include "point.cc"
 
 class Distance {

@@ -1,10 +1,3 @@
-#include <iostream>
-#include <cmath>
-#include <ctime>
-#include <sstream>
-#include <cstdlib>
-using namespace std;
-
 #include "pointDistance.h"
 
 Distance::Distance() {
