@@ -2,7 +2,6 @@ class Point {
   private:
     double x, y;
   public:
-    Point();
     Point(double, double);
     void shift(double, double);
     double get_x() const;
