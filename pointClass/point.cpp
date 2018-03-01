@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
   Point p1(3.0, 2.5);
-  Point p2(0.0, 0.0);
+  Point p2;
   cout << "Point 1: (" << p1.get_x() << ", " << p1.get_y() << ")\n";
   cout << "Point 2: (" << p2.get_x() << ", " << p2.get_y() << ")\n";
   p1.shift(1,1);

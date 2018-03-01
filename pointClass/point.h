@@ -2,12 +2,13 @@ class Point {
   private:
     double x, y;
   public:
-    Point(double init_x, double init_y);
-    void shift(double dx, double dy);
+    Point();
+    Point(double, double);
+    void shift(double, double);
     double get_x() const;
     double get_y() const;
-    void absResetx(int value);
-    void absResety(int value);
+    void absResetx(int);
+    void absResety(int);
     void xIntoy();
     void yIntox();
 };
