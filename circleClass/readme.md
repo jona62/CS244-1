@@ -3,12 +3,13 @@
 
 **Description:**
 
-#This class defines a Circle with basic attributes:
+*This class defines a Circle with basic attributes:*
 
     - A center point (x,y)
     - A radius (r)*
     - A diameter (d)
-#As well as the basic methods:
+
+*As well as the basic methods:*
 
     - Circle(), which can either set the center of the Circle
       instance to 0; set them both to the same value if only one
@@ -30,4 +31,4 @@
     - circumference(), which returns the circumference of the
       circle instance (2 times PI times the radius)
 
-#We based this class on the properties of a circle in the context of a high school geometry course.
+*We based this class on the properties of a circle in the context of a high school geometry course.*
