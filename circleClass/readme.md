@@ -6,7 +6,7 @@
 *This class defines a Circle with basic attributes:*
 
     - A center point (x,y)
-    - A radius (r)*
+    - A radius (r)
     - A diameter (d)
 
 *As well as the basic methods:*
