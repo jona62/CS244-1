@@ -8,7 +8,7 @@ int main() {
 
   honda.changeDirection('L');
 
-  assert(honda.getDirection() == 'E')
+  assert(honda.getDirection() == 'E');
   assert(honda.isGoingForward() == true);
 
   honda.changeSpeed(-10);

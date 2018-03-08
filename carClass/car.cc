@@ -63,7 +63,7 @@ void Car::changeSpeed(double newSpeed) {
   speed = newSpeed;
 }
 
-bool Car::isGoingForward() const {
+bool Car::isGoingForward() {
   if (speed > 0) {
     return true;
   }

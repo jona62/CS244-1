@@ -25,7 +25,7 @@ class Car {
     char getDirection() const;
     void changeDirection(char);
     void changeSpeed(double);
-    bool isGoingForward() const;
+    bool isGoingForward();
 };
 
 #endif //CAR_H
